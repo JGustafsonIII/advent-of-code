@@ -5,7 +5,7 @@ fn main() {
     let mut times_at_zero: i32 = 0;
     let mut dial = 50;
 
-    if let Ok(lines) = read_lines("../test_data/example.txt") {
+    if let Ok(lines) = read_lines("../test_data/day1_output.txt") {
         for line in lines.map_while(Result::ok) {
             if line.starts_with("L") {
                 let line_slice: &str = &line[1..];
